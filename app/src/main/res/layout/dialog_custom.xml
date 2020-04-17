@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height= "match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/label_newreminder"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#384CBA"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:title="New Reminder :"
+        android:titleTextColor="#FFFFFF"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/button_bar"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="390dp"
+        android:layout_height="50dp"
+        android:background="#384CBA"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:titleTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:visibility="invisible"
+        android:layout_width="110dp"
+        android:layout_marginHorizontal="80dp"
+        android:text="Cancel"
+        android:layout_height="45dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/COMMIT_button"
+        android:visibility="invisible"
+        android:layout_width="110dp"
+        android:text="Commit"
+        android:layout_marginHorizontal="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="#FFFFFF"/>
+
+    <CheckBox
+        android:id="@+id/reminder_checkbox"
+        android:layout_marginHorizontal="50dp"
+        android:title="New Reminder :"
+        android:background= "#FFFFFF"
+        android:visibility="invisible"
+        android:text="Important"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="358dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/reminder_textbox"
+        android:visibility="invisible"
+        android:background= "#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="207dp" />
+</RelativeLayout>

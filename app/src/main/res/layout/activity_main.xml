@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"></com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#384CBA"
+        app:navigationIcon="@drawable/ic_launcher_foreground"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="ZA Reminder"
+        app:titleTextColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/listaya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_anchor="@+id/COMMIT_button"
+        app:layout_anchorGravity="start|center">
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="#384CBA"
+        app:srcCompat="@android:drawable/ic_input_add" />
+    <Button
+        android:id="@+id/update_button"
+        android:visibility="invisible"
+        android:layout_width="110dp"
+        android:text="Update"
+        android:layout_marginHorizontal="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="392dp"
+        app:backgroundTint="#FFFFFF"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/label_newreminder"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#384CBA"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="New Reminder :"
+        app:titleTextColor="#FFFFFF"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/button_bar"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="390dp"
+        android:layout_height="50dp"
+        android:background="#384CBA"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:visibility="invisible"
+        android:layout_width="110dp"
+        android:layout_marginHorizontal="80dp"
+        android:text="Cancel"
+        android:layout_height="45dp"
+        android:layout_marginTop="392dp"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+    android:id="@+id/commit_button"
+    android:visibility="invisible"
+    android:layout_width="110dp"
+    android:text="Commit"
+    android:layout_marginHorizontal="210dp"
+    android:layout_height="45dp"
+    android:layout_marginTop="392dp"
+    app:backgroundTint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/COMMIT_button"
+        android:visibility="invisible"
+        android:layout_width="110dp"
+        android:text="Commit"
+        android:layout_marginHorizontal="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="392dp"
+        app:backgroundTint="#FFFFFF"/>
+
+    <CheckBox
+        android:id="@+id/reminder_checkbox"
+        android:layout_marginHorizontal="50dp"
+        android:title="New Reminder :"
+        android:background= "#FFFFFF"
+        android:visibility="invisible"
+        android:text="Important"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="358dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/reminder_textbox"
+        android:visibility="invisible"
+        android:background= "#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="207dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
